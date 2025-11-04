@@ -10,11 +10,19 @@
     */
 
     //ENTRADA
-
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let repetidas = [];
     
     //PROCESSAMENTO
+    for (let letras of listaDeLetras){
 
+        if(listaDeLetras.indexOf(letras) >= 1){
+            repetidas.push(listaDeLetras);
+        }
+    }
     
     //SAÍDA
+
+    alert(`${repetidas}`);
 
 </script>

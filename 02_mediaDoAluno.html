@@ -7,11 +7,31 @@
     */
 
     //ENTRADA
+    const notas = prompt(`Quantas notas o aluno obteve?`);
+    let notasDoAluno = [];
     
 
     //PROCESSAMENTO
-    
 
+    for(let notasAlunos = 1; notasAlunos <= notas; notasAlunos++){
+        let informando = Number(prompt(`Informe a nota ${notasAlunos} do aluno.`)); 
+
+        notasDoAluno.push(informando);
+       }
+
+        alert(notasDoAluno.join(", "));
+
+       let soma = 0;
+
+       for (let notasAlunos = 0; notasAlunos < notasDoAluno.length; notasAlunos++){
+
+        soma = soma + notasDoAluno[notasAlunos];
+       }
+
+       let media = soma / notasDoAluno.length;
+    
     //SAÍDA
+
+    alert(`A média de notas do aluno foi ${media.toFixed(2)}.`);
 
 </script>
