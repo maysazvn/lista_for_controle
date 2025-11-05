@@ -6,11 +6,33 @@
     */
 
     //ENTRADA
+    const numeroInicial = Number(prompt(`Informe um número inicial.`));
+    const numeroFinal = Number(prompt(`Informe um número final.`));
 
-    
+    let impares = [];
+    let pares = [];
+
+
     //PROCESSAMENTO
 
-    
+    if (numeroInicial < numeroFinal) {
+
+
+        for (let num = numeroInicial; num <= numeroFinal; num++) {
+
+            if (num % 2 !== 0) {
+                impares.push(num);
+            } else {
+                pares.push(num);
+            }
+        }
+    } else {
+
+        alert(`Os resultados que você colocou não são válidos. O ${numeroInicial} é maior que o ${numeroFinal}.`);
+    }
+
     //SAÍDA
+    alert(`Os números ímpares de ${numeroInicial} até ${numeroFinal} são ${impares}.`);
+    alert(`Os números pares de ${numeroInicial} até ${numeroFinal} são ${pares}.`);
 
 </script>
