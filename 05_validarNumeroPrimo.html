@@ -7,6 +7,7 @@
 
     //ENTRADA
     const numeroUsuario = Number(prompt(`Informe um número.`));
+    let divisores = [];
 
 
     //PROCESSAMENTO
@@ -15,14 +16,17 @@
         let calculo = numeroUsuario/num;
 
         if(calculo % 1 === 0){
-            alert(`Não, o número ${numeroUsuario} não é primo.`);
-        } else{
-            alert(`Sim, o número ${numeroUsuario} é primo.`);
+        divisores.push(num);
         }
 
     }
 
+    if(divisores.length == 2){
+            alert(`Sim, o número ${numeroUsuario} é um número primo.`);
+        } else{
+             alert(`Não, o número ${numeroUsuario} não é um número primo.`);
+        }
+
 
     //SAÍDA
-
 </script>
