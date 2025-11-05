@@ -6,9 +6,15 @@
     */
 
     //ENTRADA
+    populacao = 50000;
+    ano = 0;
 
-    
     //PROCESSAMENTO
+    for (let ano = 0; ano <= 10; populacao = (populacao * 0.15) + populacao){
+        alert(`A população no ano ${ano} é de ${populacao}`);
+
+        ano++;
+    }
     
 
     //SAÍDA
