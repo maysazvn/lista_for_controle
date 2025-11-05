@@ -5,9 +5,16 @@
     */
 
     //ENTRADA
+    let investimento = 1000;
+    let dobro = investimento * 2;
 
 
     //PROCESSAMENTO
+    for(let dia = 0; investimento <= dobro; investimento = (investimento * 0.2) + investimento){
+        alert(`No dia ${dia} o investimento será ${investimento.toFixed(2)}.`);
+
+        dia++;
+    }
 
 
     //SAÍDA

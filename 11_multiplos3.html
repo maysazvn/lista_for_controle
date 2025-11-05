@@ -5,14 +5,25 @@
     */
 
     //ENTRADA
-
+    let soma = 0;
+    let numeros = [];
 
     //PROCESSAMENTO
-    for (let multiplos = 1; multiplos = 100; multiplos++){
-        const conta = multiplos * 3;
+    for (let multiplos = 1; multiplos = 100; multiplos++) {
+        let conta = multiplos * 3;
+
+        document.write(` ${multiplos} x 3 = ${conta} <br>`);
+
+        numeros.push(multiplos)
+    }
+
+    for (let num of numeros) {
+        soma = soma + conta;
     }
 
 
+
     //SAÍDA
+    alert(`A soma de todos os múltiplos de 3 de 1 a 100 é ${soma}.`);
 
 </script>
