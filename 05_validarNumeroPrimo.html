@@ -6,9 +6,21 @@
     */
 
     //ENTRADA
+    const numeroUsuario = Number(prompt(`Informe um número.`));
 
 
     //PROCESSAMENTO
+    for (let num = 0; num <= numeroUsuario; num++){
+
+        let calculo = numeroUsuario/num;
+
+        if(calculo % 1 === 0){
+            alert(`Não, o número ${numeroUsuario} não é primo.`);
+        } else{
+            alert(`Sim, o número ${numeroUsuario} é primo.`);
+        }
+
+    }
 
 
     //SAÍDA
