@@ -7,16 +7,19 @@
     //ENTRADA
     let investimento = 1000;
     let dobro = investimento * 2;
+    let dia = 0;
 
 
     //PROCESSAMENTO
-    for(let dia = 0; investimento <= dobro; investimento = (investimento * 0.2) + investimento){
-        alert(`No dia ${dia} o investimento será ${investimento.toFixed(2)}.`);
+    for(let dia = 0; investimento <= dobro; investimento = (investimento * 0.02) + investimento){
+        document.write(`No dia ${dia} o investimento será ${investimento.toFixed(2)}. <br>`);
 
         dia++;
+
     }
 
 
     //SAÍDA
+    alert(`Demorará ${dia} dias para Joãozinho chegar até os R$2.000,00`);
 
 </script>
