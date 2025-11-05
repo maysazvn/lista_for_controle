@@ -8,18 +8,24 @@
     *Letras maiúsculas e minúsculas são a mesma letra e não podem ser repetidas!
     **Apresente apenas letras minúsculas!
 
-    ajudar: na 1, na 3, na 9, na 10, na 11, na 12.
+    ajudar: na 3, na 9, na 11, na 12.
     */
 
-    //ENTRADA
+   //ENTRADA
     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
-    let repetidas = [];
     
     //PROCESSAMENTO
-    
+    let letrasUnicas = [];
+    for (let i = 0; i < listaDeLetras.length; i = i + 1) {
+        let letra = listaDeLetras[i].toLowerCase();
+        let posicao = letrasUnicas.indexOf(letra);
+        if (posicao == -1) {
+            letrasUnicas.push(letra);
+        }
+    }
     
     //SAÍDA
-
-    alert(`${repetidas}`);
+    document.write(`As letras da lista, sem repetir, são: ${letrasUnicas.sort().join(", ")}`);
+</script>
 
 </script>
