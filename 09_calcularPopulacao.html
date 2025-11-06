@@ -7,16 +7,18 @@
 
     //ENTRADA
     populacao = 50000;
-    ano = 0;
 
     //PROCESSAMENTO
-    for (let ano = 0; ano <= 10; populacao = (populacao * 0.15) + populacao){
-        alert(`A população no ano ${ano} é de ${populacao}`);
+    for (let ano = 0; ano <= 10; ano++){
 
-        ano++;
+        populacao = (populacao * 0.015) + populacao;
+
+         if (ano === 5 || ano === 10) {
+            alert(`A população no ano ${ano} é de ${populacao.toFixed(0)} habitantes.`);
+     }
     }
     
-
     //SAÍDA
+
 
 </script>

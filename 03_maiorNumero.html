@@ -7,11 +7,21 @@
     */
 
     //ENTRADA
+    let maior = Number(prompt("Informe o 1º número:"));
 
-    
     //PROCESSAMENTO
+    for (let num = 2; num <= 5; num++) {
+        const cincoNum = Number(prompt(`Informe o ${num}º número:`));
+
+        if (cincoNum > maior) {
+            maior = cincoNum;
+        }
+
+    }
+
+    //SAÍDA
+    alert(`O maior número é ${maior}`);
 
     
-    //SAÍDA
 
 </script>

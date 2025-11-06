@@ -7,13 +7,11 @@
     //ENTRADA
     let investimento = 1000;
     let dobro = investimento * 2;
-
+    let dia = 0;
 
     //PROCESSAMENTO
-    for(let dia = 0; investimento <= dobro; investimento = (investimento * 0.02) + investimento){
-        document.write(`No dia ${dia} o investimento será ${investimento.toFixed(2)}. <br>`);
-
-        dia++;
+    for (; investimento < dobro; dia++) {
+        investimento = (investimento * 0.02) + investimento
 
     }
 
